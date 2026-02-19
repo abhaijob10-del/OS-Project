@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Segmentation + Paging Hybrid Simulator</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 60px;
+        }
+
+        .card {
+            background: white;
+            color: black;
+            width: 400px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 90%;
+            padding: 8px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background: #2a5298;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 95%;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #1e3c72;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 13px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Segmentation + Paging Hybrid Simulator</h1>
+    <div class="subtitle">Operating Systems Project</div>
+
+    <div class="card">
+
+        <form action="/cgi-bin/hybrid.cgi" method="GET">
+            <input type="number" name="segment" placeholder="Enter Segment Number" required><br>
+            <input type="number" name="page" placeholder="Enter Page Number" required><br>
+            <input type="number" name="offset" placeholder="Enter Offset" required><br>
+            <button type="submit">Translate Address</button>
+        </form>
+
+    </div>
+
+    <div class="footer">
+        Developed using C (CGI) + HTML + CSS
+    </div>
+
+</div>
+
+</body>
+</html>
